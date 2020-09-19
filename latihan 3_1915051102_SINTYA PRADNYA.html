@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>1915051102</title>
+<!--internal CSS-->
+<style>
+    .fitur{background-color:orangered;}
+</style>
+<!--internal CSS-->
+
+</head>
+<body>
+<div class="container">
+<header class="header">
+<div class="logo">
+<img src="image2.jpg" width="200">
+</div>
+<div style="background-color:orange;">
+<nav class="nav">
+<h1>SELAMAT DATANG</h1>
+
+<ul>
+<img src="https://i.ibb.co/BZccVhV/Whats-App-Image-2020-09-18-at-13-49-11.jpg" width="200"></td>
+<li><a href="#profile">Profile</a></li>
+<li><a href="#logout">Logout</a></li>
+</ul>
+</nav>
+</header>
+</div>
+
+<div style="background-color: orangered;">
+<aside class="sidebar">
+<div style="padding: 10px;">
+<b>Menu Data Karyawan</b><br>
+<hr>
+<a href="#">Home</a><br />
+<a href="#">Biodata</a><br />
+<a href="#">Update Biodata</a><br />
+<a href="#">Contact</a><br />
+</div>
+
+<div class="fitur"></aside>
+<main class="content">
+<div style="padding: 10px;">
+<h2 style="margin: 0px;">Update Biodata Karyawan</h2>
+<hr/>
+<form action=" formulir.php" method="post" onSubmit="return ValidasiForm()" name="Fo
+rmReg">
+<table>
+</div>
+
+<div style="background-color: aqua;">
+<tr>
+<td>Nama</td>
+<td>:</td>
+<td><input type="text" name="nama lengkap" value="" placeholder=" nama "></br>
+<small style="color: yellow" id="err_nama"></small>
+</td>
+</tr>
+
+<tr>
+<td>Password</td>
+<td>:</td>
+ <td><input type="Password" name="Password" placeholder="password"></br>
+<small style="color: yellow" id="err_password"></small>
+</td>
+</tr>
+</div>
+
+<tr>      
+    <td>Jenis Kelamin </td>
+    <td>:</td>
+    <td>
+    <input type="radio" name="jenis kelamin" value="laki-laki" checked/> laki-laki 
+    <input type="radio" name="jenis kelamin" value="perempuan" checked/> perempuan
+    <input type="radio" name="jenis kelamin" value="Lainnya" checked/> Lainnya          
+    </br>
+        <small style="color:yellow;" id="err_jenis_kelamin"></small>
+    </td>
+    </tr>
+
+<tr>
+    <td>Tanggal Lahir</td>
+    <td>:</td>
+    <td><input type="text" name="tangal lahir" value="" placeholder="dd-mm-yyyy"></br>
+        <small style="color:yellow;" id="err_tangal_lahir"></small>
+    </td>
+    </tr>
+
+    <tr>
+        <td>Email</td>
+        <td>:</td>
+        <td><input type="text" name="email" placeholder="email"></br>
+            <small style="color: yellow;" id="eer_email"></small>
+        </td>
+        </tr>
+
+        <tr>
+        <td>No telpon</td>
+        <td>:</td>
+        <td><input type="text" name="no hp" placeholder="+62 "></br>
+            <small style="color:yellow;" id="err_no_telpon"></small>
+        </td>
+        </tr>
+
+<tr>
+<td>Hobi</td>
+<td>:</td>
+<td><input type="checkbox" name="Hobi_joging"/> joging
+    <input type="checkbox" name="Hobi_hiking"/> hiking
+    <input type="checkbox" name="Hobi_dance"/> dance
+    <input type="checkbox" name="Hobi_music"/> Music
+    <input type="checkbox" name="Hobi_game"/> Game 
+    <input type="checkbox" name="Hobi_lainnya"/> Lainnya
+    </br>
+<small style="color: yellow" id="err_hobi"></small>
+</td>
+</tr>
+
+<tr>
+    <td>Agama</td>
+    <td>:</td>
+    <td><select name="agama">
+        <option value="agama">Hindu</option>
+        <option value="agama" selected>Islam</option>
+        <option value="agama" selected>Buddha</option>
+        <option value="agama" selected>Katolik</option>
+        <option value="agama" selected>Konghucu</option>
+        <option value="agama" selected>Protestan</option>
+        <option value="agama" selected>Lainnya</option>
+        ></br>
+        <small style="color: yellow;" id="eer_agama"></small>
+        </td>
+        </tr>
+        
+        <tr>
+            <td>Alamat Tinggal</td>
+                <td>:</td>
+                <td><input type="text" name="alamat " placeholder="alamat"></br>
+                    <small style="color:yellow;" id="err_alamat_tinggal"></small>
+                </td>
+             </tr>
+
+<tr>
+<td>Asal Kota</td>
+<td>:</td>
+<td><select name="asal kota">
+ <option value="kota ">Denpasar</option>
+ <option value="kota " selected>Badung</option>
+<option value="kota " selected>Buleleng</option>
+ <option value="kota " selected>Bangli</option>
+ <option value="kota " selected>Gianyar</option>
+ <option value="kota " selected>Jembrana</option>
+<option value="kota " selected>Karangasem</option>
+ <option value="kota " selected>Klungkung</option>
+<option value="kota " selected>Tabanan</option>
+<option value="kota " selected>Lainnya</option>
+</select>
+</br>
+<small style="color: yellow" id="err_asal_kota"></small>
+</td>
+</tr>
+
+<tr>
+<td>Biography</td>
+<td>:</td>
+<td><textarea name="komentar" rows="5" cols="20"></textarea>
+
+</td>
+</tr>
+<tr>
+<td colspan="3" align="right"><button> simpan</button> </td>
+</tr>
+</table>
+</form>
+</div>
+</main>
+</body>
+</html>
